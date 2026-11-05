@@ -1,0 +1,147 @@
+
+[
+  {
+    "id": "dog_001",
+    "species": "dog",
+    "category": "nutrition",
+    "title": "Basic dog nutrition",
+    "content": "Dogs need a nutritionally complete and balanced diet appropriate for their age, size, activity level and health requirements. Fresh drinking water should always be available. Sudden dietary changes may cause digestive upset, so food transitions should generally be gradual. Consult a veterinarian when selecting a therapeutic diet.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-small-animals/overview-of-nutrition-small-animals"
+  },
+  {
+    "id": "cat_001",
+    "species": "cat",
+    "category": "nutrition",
+    "title": "Basic cat nutrition",
+    "content": "Cats are obligate carnivores and require nutrients found in animal-based foods. Their diet should be complete and balanced for their life stage. Provide fresh drinking water and monitor changes in appetite or drinking habits. A veterinarian can advise on special dietary requirements.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/cat-owners/selecting-and-providing-a-home-for-a-cat/proper-nutrition-for-cats"
+  },
+  {
+    "id": "bird_001",
+    "species": "bird",
+    "category": "environment",
+    "title": "Basic bird environment",
+    "content": "Pet birds need an appropriately sized, secure enclosure with enough room to move and stretch their wings. Provide suitable perches, enrichment and opportunities for safe exercise. The enclosure should offer adequate space for the bird to move freely and support its natural behaviours.",
+    "source": "RSPCA",
+    "source_url": "https://www.rspca.org.uk/adviceandwelfare/pets/birds"
+  },
+  {
+    "id": "rabbit_001",
+    "species": "rabbit",
+    "category": "nutrition",
+    "title": "Basic rabbit nutrition",
+    "content": "Rabbits require constant access to good-quality grass hay, fresh drinking water and suitable leafy greens. Their diet should be appropriate for rabbits and changes should be introduced gradually. Reduced appetite or reduced droppings can indicate a serious problem and require prompt veterinary attention.",
+    "source": "RSPCA",
+    "source_url": "https://www.rspca.org.uk/adviceandwelfare/pets/rabbits"
+  },
+  {
+    "id": "dog_002",
+    "species": "dog",
+    "category": "nutrition",
+    "title": "Balanced nutrition for dogs",
+    "content": "Dogs are considered omnivores from a nutritional standpoint. They require a complete and balanced diet appropriate for their life stage. Nutritional requirements differ between puppies and adult dogs. Fresh drinking water should always be available. Homemade diets made from only a few ingredients may be nutritionally inadequate.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/management-and-nutrition/nutrition-small-animals/overview-of-nutrition-small-animals"
+  },
+  {
+    "id": "cat_002",
+    "species": "cat",
+    "category": "nutrition",
+    "title": "Foods and dietary safety for cats",
+    "content": "Cats should receive commercially formulated, nutritionally balanced food. Dog food should not be used as a regular diet for cats because cats have different nutrient requirements. Milk is not a recommended treat and may upset a cat's stomach. Raw meat and raw dairy products should not be fed because they can pose health risks. Supplements should only be given with veterinary approval.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/cat-owners/selecting-and-providing-a-home-for-a-cat/proper-nutrition-for-cats"
+  },
+  {
+    "id": "bird_002",
+    "species": "bird",
+    "category": "nutrition",
+    "title": "Feeding and food hygiene for pet birds",
+    "content": "Pet birds may be fed appropriately formulated pellets or crumbles selected for their species and size. Small amounts of fresh vegetables and fruit can supplement their diet. Fresh food should not remain in the cage too long because it can spoil. Food and water bowls should be kept clean. Birds should receive regular veterinary care.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/en-us/veterinary/bird-owners/choosing-and-taking-care-of-a-pet-bird/feeding-a-pet-bird"
+  },
+  {
+    "id": "rabbit_002",
+    "species": "rabbit",
+    "category": "nutrition",
+    "title": "Hay and fibre requirements for rabbits",
+    "content": "Rabbits are herbivores and need a high-fibre diet. Good-quality grass hay should be available in unlimited quantities. Suitable rabbit pellets and fresh vegetables can form additional parts of the diet. Fresh drinking water must always be available. Dietary requirements vary with age, growth stage, breed and activity. Reduced appetite or changes in droppings require prompt veterinary attention.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/all-other-pets/rabbits/diet-for-rabbits"
+  },
+  {
+    "id": "dog_003",
+    "species": "dog",
+    "category": "exercise",
+    "title": "Exercise and activity for dogs",
+    "content": "Dogs need regular exercise to support their health and help prevent behaviour problems. Exercise requirements vary with the dog's age, fitness, breed and individual needs. Excessive exercise can be harmful, particularly for young, old or physically unfit dogs. Owners should take care during hot or humid weather and consider shorter walks for dogs with breathing difficulties.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/dog-owners/selecting-and-providing-a-home-for-a-dog/providing-a-home-for-a-dog"
+  },
+  {
+    "id": "dog_004",
+    "species": "dog",
+    "category": "health_and_grooming",
+    "title": "Routine health care for dogs",
+    "content": "Routine dog care includes veterinary checkups, grooming and maintaining a safe home environment. Adult dogs should receive a full veterinary checkup at least once a year. Puppies require more frequent visits, and senior dogs may need checkups twice a year or more. Changes in appetite, activity, vomiting, diarrhoea, urination, skin or coat condition may indicate a need for veterinary evaluation.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/dog-owners/routine-care-of-dogs/routine-health-care-of-dogs"
+  },
+  {
+    "id": "cat_003",
+    "species": "cat",
+    "category": "hygiene",
+    "title": "Litter box hygiene for cats",
+    "content": "Cat litter boxes should be kept clean. Waste should be scooped daily, and the entire litter box should be cleaned at least once a week. Larger litter boxes provide more room for cats to dig and turn around. Litter boxes should be placed in quiet, accessible areas away from food and water. Changes in litter box use, including straining, may require veterinary attention.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/cat-owners/selecting-and-providing-a-home-for-a-cat/providing-a-litter-box-for-a-cat"
+  },
+  {
+    "id": "cat_004",
+    "species": "cat",
+    "category": "exercise_and_environment",
+    "title": "Exercise and home safety for cats",
+    "content": "Cats need opportunities for physical activity. Toys such as feather wands and balls can encourage activity by stimulating hunting behaviours. Dividing meals into smaller portions and placing bowls in different areas can encourage movement. Indoor homes should be made safe by keeping cleaning supplies, electrical cords, dangerous plants and small hazardous objects out of reach. Open windows and balconies can present fall risks.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/cat-owners/selecting-and-providing-a-home-for-a-cat/providing-a-home-for-a-cat"
+  },
+  {
+    "id": "bird_003",
+    "species": "bird",
+    "category": "environment",
+    "title": "Housing and exercise for pet birds",
+    "content": "A pet bird's cage should provide enough room to move, climb, stretch its wings and accommodate suitable perches and toys. Small cages can cause stress and restrict movement. Birds need opportunities for exercise, including safe and supervised time outside the cage. Cage placement should avoid kitchen smoke, cooking fumes, drafts and extreme temperatures.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/bird-owners/choosing-and-taking-care-of-a-pet-bird/providing-a-home-for-a-bird"
+  },
+  {
+    "id": "bird_004",
+    "species": "bird",
+    "category": "behaviour_and_enrichment",
+    "title": "Behaviour and enrichment for pet birds",
+    "content": "Pet birds are social and intelligent animals that need attention and mental stimulation. Boredom and insufficient stimulation can contribute to unwanted behaviours such as excessive screaming, biting and feather plucking. Enrichment can include toys, foraging activities, interaction and training. Birds also need adequate sleep and opportunities for rest.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/bird-owners/choosing-and-taking-care-of-a-pet-bird/behavior-of-pet-birds"
+  },
+  {
+    "id": "rabbit_003",
+    "species": "rabbit",
+    "category": "environment",
+    "title": "Housing and safety for pet rabbits",
+    "content": "Rabbits need spacious, safe housing with good ventilation and protection from extreme temperatures and predators. Indoor rabbits should be kept away from electrical wires, carpets and other unsafe objects they may chew. Outdoor housing should provide shade, shelter and protection. Enclosures should be easy to clean and provide enough room for normal movement.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/all-other-pets/rabbits/providing-a-home-for-a-rabbit"
+  },
+  {
+    "id": "rabbit_004",
+    "species": "rabbit",
+    "category": "exercise_and_enrichment",
+    "title": "Exercise and enrichment for pet rabbits",
+    "content": "Rabbits need daily exercise in a safe, supervised area outside their enclosure. Enrichment can include cardboard boxes, tunnels, hiding spaces and safe chew toys. Rabbits have a physical and mental need to chew, and suitable chewing materials can help wear down their continuously growing teeth. Their exercise area should be protected from electrical wires and other hazards.",
+    "source": "Merck Veterinary Manual",
+    "source_url": "https://www.merckvetmanual.com/all-other-pets/rabbits/providing-a-home-for-a-rabbit"
+  }
+]

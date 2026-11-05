@@ -1,0 +1,116 @@
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Keep the existing students collection protected.
+    match /students/{document=**} {
+      allow read, write: if false;
+    }
+
+    // Do not allow client access to legacy top-level orders.
+    match /orders/{orderId} {
+      allow read, write: if false;
+    }
+
+    function isOwner(userId) {
+      return request.auth != null
+        && request.auth.uid == userId;
+    }
+
+    function validStatus(status) {
+      return status in [
+        'placed',
+        'paymentVerified',
+        'packing',
+        'shipped',
+        'delivered',
+        'paymentFailed',
+        'cancelled'
+      ];
+    }
+
+    function validTransition(from, to) {
+      return (
+        from == 'placed'
+        && to in ['paymentVerified', 'paymentFailed', 'cancelled']
+      ) || (
+        from == 'paymentFailed'
+        && to in ['placed', 'cancelled']
+      ) || (
+        from == 'paymentVerified'
+        && to in ['packing', 'cancelled']
+      ) || (
+        from == 'packing'
+        && to == 'shipped'
+      ) || (
+        from == 'shipped'
+        && to == 'delivered'
+      );
+    }
+
+    // PawCart order security and FSM validation.
+    match /users/{userId}/orders/{orderId} {
+
+      // Read only your own orders.
+      allow read: if isOwner(userId);
+
+      // New orders must have the expected fields and initial status.
+      allow create: if isOwner(userId)
+        && request.resource.data.keys().hasAll([
+          'id',
+          'customerName',
+          'phone',
+          'address',
+          'city',
+          'pinCode',
+          'total',
+          'status',
+          'createdAt'
+        ])
+        && request.resource.data.keys().hasOnly([
+          'id',
+          'customerName',
+          'phone',
+          'address',
+          'city',
+          'pinCode',
+          'total',
+          'status',
+          'createdAt'
+        ])
+        && request.resource.data.id == orderId
+        && request.resource.data.customerName is string
+        && request.resource.data.phone is string
+        && request.resource.data.address is string
+        && request.resource.data.city is string
+        && request.resource.data.pinCode is string
+        && request.resource.data.total is number
+        && request.resource.data.total >= 0
+        && request.resource.data.createdAt is string
+        && request.resource.data.status in [
+          'paymentVerified',
+          'paymentFailed'
+        ];
+
+      // Only valid FSM status transitions are allowed.
+      allow update: if isOwner(userId)
+        && request.resource.data.diff(resource.data)
+             .affectedKeys().hasOnly(['status'])
+        && validStatus(request.resource.data.status)
+        && validTransition(
+          resource.data.status,
+          request.resource.data.status
+        );
+
+      // Orders cannot be deleted through the client.
+      allow delete: if false;
+    }
+
+    // PawCart My Pets and PawCare AI permissions.
+    match /users/{userId}/pets/{petId} {
+      allow read, create, update, delete: if isOwner(userId);
+    }
+  }
+}
